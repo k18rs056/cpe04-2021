@@ -194,7 +194,7 @@
 
     // ButtonCがクリックされた時の処理
     function btnCClick(e){
-        //alarm();
+        alarm();
         active = false;
         period = 60* parseInt( $("#minute").val() ) + parseInt( $("#second").val() );
         $("#time").html("経過時間: 0");
@@ -223,8 +223,8 @@
 <body>
     <canvas id="mycanvas" width="200" height="200">Test</canvas>
 
-    <div id="minuteStr">□</div>
-    <div id="secondStr">□</div>
+    <div id="minuteStr">■</div>
+    <div id="secondStr">■</div>
 
     <div id="remain">カウントタイマー</div>
     <div id="time"></div>
